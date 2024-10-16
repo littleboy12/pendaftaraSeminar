@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.setNavbar {
+  margin: 20px;
+  margin-left: 300px;
+}
+
+main {
+  margin-left: 280px;
+  padding-top: 70px;
+}
+
+.sidebar-hidden {
+  transform: translateX(-100%); /* Hide sidebar off-screen */
+  transition: transform 0.3s ease-in-out; /* Add smooth transition */
+}
+
+.navbar-hidden {
+  transform: translateX(-280px); /* Hide sidebar off-screen */
+  width: 97%;
+  transition: transform 0.3s ease-in-out; /* Add smooth transition */
+}
+
+.main-hidden {
+  transform: translateX(-280px); /* Hide sidebar off-screen */
+  width : 100%;
+  transition: transform 0.3s ease-in-out; /* Add smooth transition */
+}
+
+/* Additional styling for visual feedback on main content background (adjust as needed) */
+.main-content-shifted {
+  background-color: #f5f5f5; /* Lighten main content background for visual contrast */
+}
