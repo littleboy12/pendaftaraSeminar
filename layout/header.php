@@ -21,7 +21,7 @@
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <?php
-            foreach ($menuPeserta as $fitur) {
+            foreach ($menuAdmin as $fitur) {
             ?>
                 <li>
                     <a href="<?= $fitur ?>.php" class="nav-link link-dark">
@@ -29,11 +29,10 @@
                             <use xlink:href="#speedometer2"></use>
                         </svg>
                         <?= $fitur ?>
-                    </a>
+                    </a>    
                 </li>
             <?php
             }
-
             ?>
         </ul>
         <hr>
