@@ -1,4 +1,4 @@
-<?php include_once "../app/dataLayout.php" ?>
+<?php include_once "../app/dataLayout.php"; require_once "../public/registration.php" ?>
 <!doctype html>
 <html lang="en">
 
@@ -28,49 +28,58 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <h2 class="text-center mb-4">Formulir Pendaftaran</h2>
-                <form action="../public/registration.php" method="POST">
+                <form method="POST" action="">
                     <h6 class="text-secondary-emphasis">- Biodata Anda</h6>
                     <div class="mx-3">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Nama Lengkap</label>
-                            <input type="text" name="nama" class="form-control" id="nama" required>
+                            <input type="text" name="nama" class="form-control" id="nama" value="<?= htmlspecialchars($nama)?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control" id="email" required>
+                            <input type="email" name="email" class="form-control" id="email" value="<?= htmlspecialchars($email)?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="negara" class="form-label">Negara</label>
-                            <input class="form-control" name="negara" id="negara" required>
+                            <input class="form-control" name="negara" id="negara" value="<?= htmlspecialchars($negara)?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="provinsi" class="form-label">Provinsi</label>
-                            <input class="form-control" name="provinsi" id="provinsi" required>
+                            <input class="form-control" name="provinsi" id="provinsi" value="<?= htmlspecialchars($provinsi)?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="alamat" class="form-label">Alamat Lengkap</label>
-                            <textarea class="form-control" name="alamat" id="alamat" rows="3" required></textarea>
+                            <textarea class="form-control" name="alamat" id="alamat" rows="3" value="" required><?= htmlspecialchars($alamat)?></textarea>
                         </div>
                         <div class="mb-3">
                             <label for="institusi" class="form-label">Institusi</label>
-                            <input class="form-control" name="institusi" id="institusi" required>
+                            <input class="form-control" name="institusi" id="institusi" value="<?= htmlspecialchars($institusi)?>" required>
                         </div>
                     </div>
                     <h6 class="text-secondary-emphasis" style="margin-top: 50px;">- Biodata Anda</h6>
                     <div class="mx-3">
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
-                            <input type="text" name="username" class="form-control" id="username" required>
+                            <input type="text" name="username" class="form-control" id="username" value="<?= htmlspecialchars($username)?>" required>
+                            <?php if (isset($error['errUsername'])): ?>
+                                <p style="color: red;"><?php echo $error['errUsername']; ?></p>
+                            <?php endif; ?>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" name="password" class="form-control" id="password" required>
+                            <input type="password" name="password" class="form-control" id="password" value="<?= htmlspecialchars($password)?>" required>
+                            <?php if (isset($error['errPassword'])): ?>
+                                <p style="color: red;"><?php echo $error['errPassword']; ?></p>
+                            <?php endif; ?>
                         </div>
                         <div class="mb-3">
                             <label for="repassword" class="form-label">Reenter Password</label>
-                            <input type="password" name="rePassword" class="form-control" id="repassword" required>
+                            <input type="password" name="rePassword" class="form-control" id="repassword" value="<?= htmlspecialchars($rePassword)?>" required>
+                            <?php if (isset($error['errPassword'])): ?>
+                                <p style="color: red;"><?php echo $error['errPassword']; ?></p>
+                            <?php endif; ?>
                         </div>
-                        <button type="submit" class="btn btn-primary">Daftar</button>
+                        <input type="submit" name="register" class="btn btn-primary" value="Daftar">
                     </div>
                 </form>
             </div>
