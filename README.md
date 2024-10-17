@@ -8,34 +8,33 @@ Pengguna dapat melakukan pendaftaran seminar, mengisi data diri, dan menerima ko
 ## Fitur
 - Formulir pendaftaran seminar dengan validasi input.
 - Halaman konfirmasi setelah pendaftaran berhasil.
-- Tampilan responsif yang dapat digunakan pada berbagai perangkat.
 - Manajemen data pendaftar yang dapat diakses oleh admin.
 
 ## Teknologi yang Digunakan
 - **Frontend**:
   - HTML
   - CSS
-  - JavaScript (untuk validasi form dan interaksi dinamis)
+  - JavaScript
   
 - **Backend**:
-  - PHP (untuk mengelola form dan penyimpanan data pendaftar)
-  - MySQL (untuk menyimpan data pendaftar seminar)
+  - PHP 
+  - MySQL
 
 - **Library dan Framework**:
-  - Bootstrap (untuk tampilan yang responsif dan cepat)
+  - Bootstrap
   
 ## Instalasi
 
 ### Persyaratan Sistem
-- Web server (misalnya Apache atau Nginx)
+- Web server - phpMyAdmin
 - PHP (versi 7.4 atau lebih tinggi)
-- MySQL atau MariaDB
-- Text editor (misalnya VSCode, Sublime Text)
+- MySQL
+- Text editor
 
 ### Langkah-langkah Instalasi
 1. **Clone repository**:
     ```bash
-    git clone https://github.com/username/repository-name.git
+    git clone https://github.com/littleboy12/pendaftaraSeminar.git
     ```
 
 2. **Pindahkan file ke direktori root server**:
@@ -44,11 +43,11 @@ Pengguna dapat melakukan pendaftaran seminar, mengisi data diri, dan menerima ko
 3. **Buat database di MySQL**:
    - Masuk ke phpMyAdmin atau menggunakan command line untuk membuat database:
      ```sql
-     CREATE DATABASE seminar_db;
+     CREATE DATABASE db_seminar;
      ```
 
 4. **Impor file database**:
-   - Gunakan file SQL yang ada di folder `db` untuk mengimpor tabel-tabel yang diperlukan ke dalam database `seminar_db`.
+   - Gunakan file SQL yang ada di folder `db` untuk mengimpor tabel-tabel yang diperlukan ke dalam database `db_seminar`.
 
 5. **Konfigurasi koneksi database**:
    - Edit file `config.php` dan sesuaikan dengan detail koneksi database (host, username, password, dan nama database).
@@ -71,8 +70,5 @@ Jika Anda ingin berkontribusi pada project ini, Anda dapat mengikuti langkah-lan
 4. Push branch ke repository Anda (`git push origin fitur-baru`).
 5. Buat pull request untuk review.
 
-## Lisensi
-Project ini menggunakan lisensi [MIT License](LICENSE).
-
 ## Pembuat
-- [Nama Anda](https://github.com/username)
+- [Aldi Tulus Pribadi_2200018097](https://github.com/littleboy12)
