@@ -1,4 +1,4 @@
-<?php include_once "../app/dataLayout.php" ?>
+<?php include_once "../app/dataLayout.php"; session_start() ?>
 <!doctype html>
 <html lang="en">
 
@@ -20,20 +20,29 @@
         </a>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
-            <?php
-            foreach ($menuAdmin as $fitur) {
-            ?>
-                <li>
-                    <a href="<?= $fitur ?>.php" class="nav-link link-dark">
-                        <svg class="bi me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        <?= $fitur ?>
-                    </a>    
-                </li>
-            <?php
-            }
-            ?>
+            <?php if ($_SESSION['level'] == 'user') : ?>
+                <?php foreach ($menuPeserta as $fitur) : ?>
+                    <li>
+                        <a href="<?= $fitur ?>.php" class="nav-link link-dark">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg>
+                            <?= $fitur ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            <?php elseif ($_SESSION['level'] == 'admin') : ?>
+                <?php foreach ($menuAdmin as $fitur) : ?>
+                    <li>
+                        <a href="<?= $fitur ?>.php" class="nav-link link-dark">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg>
+                            <?= $fitur ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            <?php endif ?>
         </ul>
         <hr>
         <div class="dropdown">
@@ -47,7 +56,7 @@
                 <li>
                     <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                <li><a class="dropdown-item" href="../public/logout.php">Sign out</a></li>
             </ul>
         </div>
     </div>
