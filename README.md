@@ -1,5 +1,10 @@
 # Website Pendaftaran Seminar
 
+## Pembuat
+- **NAMA   : ALDI TULUS P**
+- **NIM    : 2200018097**
+- **KELAS  : C**
+
 ## Deskripsi
 Website Pendaftaran Seminar ini adalah sebuah aplikasi berbasis web yang digunakan untuk melakukan pendaftaran seminar secara online. Website ini dibuat sebagai tugas kuliah pada mata kuliah **Pemrograman Website Dinamis**.
 
@@ -70,9 +75,3 @@ Jika Anda ingin berkontribusi pada project ini, Anda dapat mengikuti langkah-lan
 3. Lakukan perubahan dan commit (`git commit -am 'Menambahkan fitur baru'`).
 4. Push branch ke repository Anda (`git push origin fitur-baru`).
 5. Buat pull request untuk review.
-
-## Pembuat
-- **NAMA   : ALDI TULUS P**
-- **NIM    : 2200018097**
-- **KELAS  : C**
-- [Aldi Tulus Pribadi_2200018097](https://github.com/littleboy12)
