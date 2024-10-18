@@ -16,3 +16,11 @@ sidebarToggle.addEventListener('click', () => {
     mainContent.classList.add('main-content-shifted'); // Add background shift
   }
 });
+
+
+const btnShowDetail = document.getElementById('btnShowDetail');
+const detailContainer = document.getElementsByClassName('cardDetail');
+
+btnShowDetail.addEventListener('click', () => {
+  detailContainer.classList.remove('d-none');
+});
