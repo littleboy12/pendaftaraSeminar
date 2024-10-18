@@ -61,6 +61,7 @@ Pengguna dapat melakukan pendaftaran seminar, mengisi data diri, dan menerima ko
 ## Penggunaan
 - **Pendaftaran Seminar**: Pengguna dapat mengisi form pendaftaran dengan memasukkan nama, email, dan data diri lainnya.
 - **Admin Panel**: Admin dapat melihat data pendaftar dan mengelola pendaftaran yang sudah masuk.
+- **Login**: Untuk login Admin cek terlebih dahulu table 'tb_user' pada databes, atau menggunakan username : admin dan password admin1
 
 ## Kontribusi
 Jika Anda ingin berkontribusi pada project ini, Anda dapat mengikuti langkah-langkah berikut:
