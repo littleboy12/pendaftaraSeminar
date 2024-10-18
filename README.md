@@ -10,6 +10,11 @@ Website Pendaftaran Seminar ini adalah sebuah aplikasi berbasis web yang digunak
 
 Pengguna dapat melakukan pendaftaran seminar, mengisi data diri, dan menerima konfirmasi pendaftaran secara otomatis melalui sistem yang dibangun pada website ini.
 
+## Penggunaan
+- **Pendaftaran Seminar**: Pengguna dapat mengisi form pendaftaran dengan memasukkan nama, email, dan data diri lainnya.
+- **Admin Panel**: Admin dapat melihat data pendaftar dan mengelola pendaftaran yang sudah masuk.
+- **Login**: Untuk login Admin cek terlebih dahulu table 'tb_user' pada database, atau menggunakan username : admin dan password admin1
+
 ## Fitur
 - Formulir pendaftaran seminar dengan validasi input.
 - Halaman konfirmasi setelah pendaftaran berhasil.
@@ -62,12 +67,6 @@ Pengguna dapat melakukan pendaftaran seminar, mengisi data diri, dan menerima ko
      ```
      http://localhost/nama-folder/
      ```
-
-## Penggunaan
-- **Pendaftaran Seminar**: Pengguna dapat mengisi form pendaftaran dengan memasukkan nama, email, dan data diri lainnya.
-- **Admin Panel**: Admin dapat melihat data pendaftar dan mengelola pendaftaran yang sudah masuk.
-- **Login**: Untuk login Admin cek terlebih dahulu table 'tb_user' pada database, atau menggunakan username : admin dan password admin1
-
 ## Kontribusi
 Jika Anda ingin berkontribusi pada project ini, Anda dapat mengikuti langkah-langkah berikut:
 1. Fork repository ini.
