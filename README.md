@@ -34,7 +34,7 @@ Pengguna dapat melakukan pendaftaran seminar, mengisi data diri, dan menerima ko
 ### Langkah-langkah Instalasi
 1. **Clone repository**:
     ```bash
-    git clone https://github.com/littleboy12/pendaftaraSeminar.git
+    git clone https://github.com/littleboy12/pendaftaranSeminar.git
     ```
 
 2. **Pindahkan file ke direktori root server**:
@@ -72,4 +72,7 @@ Jika Anda ingin berkontribusi pada project ini, Anda dapat mengikuti langkah-lan
 5. Buat pull request untuk review.
 
 ## Pembuat
+- **NAMA   : ALDI TULUS P**
+- **NIM    : 2200018097**
+- **KELAS  : C**
 - [Aldi Tulus Pribadi_2200018097](https://github.com/littleboy12)
