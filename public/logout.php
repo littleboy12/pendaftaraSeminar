@@ -3,5 +3,5 @@ session_start();
 session_unset();
 session_destroy();
 
-header("Location: ../view/view_registration.php");
+header("Location: ../view/view_login.php");
 exit();
