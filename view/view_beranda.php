@@ -2,7 +2,7 @@
 include "../layout/header.php";
 
 if (!isset($_SESSION['username'])) {
-    header("Location: ./view_registration.php");
+    header("Location: ./view_login.php");
 
     exit();
 }

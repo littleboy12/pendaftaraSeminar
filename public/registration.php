@@ -4,7 +4,7 @@ session_start();
 
 $error = [];
 
-$nama = $email = $negara = $provinsi = $alamat = $insitusi = $username = $password = $rePassword = "";
+$nama = $email = $negara = $provinsi = $alamat = $institusi = $username = $password = $rePassword = "";
 
 if (isset($_POST['register'])) {
     $nama = $_POST['nama'];
@@ -33,7 +33,7 @@ if (isset($_POST['register'])) {
                     $_SESSION['nama'] = $nama;
                     $_SESSION['level'] = 'user';
 
-                    header("Location: ../view/beranda.php");
+                    header("Location: ../view/view_beranda.php");
                     exit();
                 }
             } else {
