@@ -1,9 +1,14 @@
 <?php
 
-$menuPeserta = ["Beranda", "Seminar Saya", "Jadwal Seminar"];
+$menuPeserta = [
+    ["Beranda", "view_beranda.php"],
+    ["Seminar Saya", "view_seminar.php"],
+    ["Jadwal Seminar", "view_jadwal.php"]
+];
 
 
-$menuAdmin = ["Beranda", "Manage Regestration", "Manage User"];
-
-
-?>
+$menuAdmin = [
+    ["Beranda", "view_beranda.php"], 
+    ["Manage Regestration", "view_manage_registration.php"], 
+    ["Manage User", "view_manage_user.php"]
+];

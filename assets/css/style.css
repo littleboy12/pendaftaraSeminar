@@ -38,3 +38,7 @@
 .regis {
   background-color: #ecf0f1;
 }
+
+.card-detail {
+  display: fixed;
+}

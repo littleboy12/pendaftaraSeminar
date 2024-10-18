@@ -1,4 +1,10 @@
-<?php include_once "../app/dataLayout.php"; require_once "../public/login.php" ?>
+<?php include_once "../app/dataLayout.php"; require_once "../public/login.php";
+if (isset($_SESSION['username'])) {
+    header("Location: ./view_beranda.php");
+
+    exit();
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -19,7 +25,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <span class="navbar-text mx-4" style="right: 0; position: absolute;">
-                    <a href="#"><button type="button" class="btn btn-outline-dark">Sign In</button></a>
+                    <a href="./view_registration.php"><button type="button" class="btn btn-outline-dark">Sign Up</button></a>
                 </span>
             </div>
         </div>
@@ -44,7 +50,7 @@
                                 <p style="color: red;"><?php echo $error['errPassword']; ?></p>
                             <?php endif; ?>
                         </div>
-                        <input type="submit" name="login" class="btn btn-primary" value="Daftar">
+                        <input type="submit" name="login" class="btn btn-primary" value="Login">
                     </div>
                 </form>
             </div>
