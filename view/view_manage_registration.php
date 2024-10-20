@@ -99,7 +99,7 @@ if (isset($_GET['id'])) {
                                 <textarea name="alamat" name="" class="form-control" id=""><?= $data['alamat'] ?></textarea>
                             </div>
                             <div class="form-group my-2">
-                                <label for="email">Status</label>
+                                <label for="email">Status - <span style="font-style: italic; font-weight: 100; color: red;">Ubah Ke <b>Terdaftar</b> Untuk Menambahkan Ke Seminar</span> </label>
                                 <select name="status" id="status" class="form-control">
                                     <?php if ($data['status'] == 'Terdaftar' or $data['status'] == 'Tidak' or $data['status'] == 'belum') : ?>
                                         <option value="0" selected><?= $data['status']; ?></option>
